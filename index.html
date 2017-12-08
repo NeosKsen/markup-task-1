@@ -51,7 +51,7 @@
                     показана за это время, то пользователь в целом удовлетворен скоростью работы,
                     но уже не настолько счастлив. И применяем формулу:</p>
                 <p>(<var>кол-во счастливых пользователей</var> +
-				<var>кол-во удовлетворенных</var> / 2) / (<var>кол-во всех</var>)<br>
+                <var>кол-во удовлетворенных</var> / 2) / (<var>кол-во всех</var>)<br>
                 Получается значение от нуля до единицы, которое, видимо, лучше всего показывает, 
                     хорошо или плохо работает почта.</p>
                 <p><strong>Как мы измеряем</strong></p>
@@ -141,19 +141,19 @@ this.timings['look-ma-finish'] = Date.now();</code>
                         — итерационный метод численной оптимизации, предназначенный для нахождения
                         локального максимума/минимума нелинейного функционала без ограничений.</figcaption>
                     <code>
-						дано:<em>&epsilon;, x<sub>0</sub></em><br>
-						инициализировать <dfn>H<sub>0</sub></dfn><br>
-						<dfn>k</dfn>=0<br>
-						<strong>while</strong>|| &nabla;<em>f<sub>k</sub></em>|| &gt; &epsilon;<br>
-						&emsp;найти направление <dfn>p<sub>k</sub> = -C <sub>k</sub>&nabla; f<sub>k</sub></dfn><br>
-						&emsp;вычислить <dfn>x<sub>k+1</sub> = x<sub>
-						k</sub> + &alpha; <sub>k</sub>p<sub>k</sub>, &alpha; <sub>
-						k</sub></dfn> удовлетворяет условиям Вольфе<br>
-						&emsp;обозначить <dfn>s<sub>k</sub> = x<sub>k+1</sub>-x<sub>k</sub>
-							и y<sub>k</sub> = &nabla; f<sub>k+1</sub> - &nabla; f<sub>k</sub></dfn><br>
-						&emsp;вычислить <dfn>C<sub>k+1</sub></dfn><br>
-						&emsp;<dfn>k=k+1</dfn><br>
-						<strong>end</strong>
+                        дано:<em>&epsilon;, x<sub>0</sub></em><br>
+                        инициализировать <dfn>H<sub>0</sub></dfn><br>
+                        <dfn>k</dfn>=0<br>
+                        <strong>while</strong>|| &nabla;<em>f<sub>k</sub></em>|| &gt; &epsilon;<br>
+                        &emsp;найти направление <dfn>p<sub>k</sub> = -C <sub>k</sub>&nabla; f<sub>k</sub></dfn><br>
+                        &emsp;вычислить <dfn>x<sub>k+1</sub> = x<sub>
+                        k</sub> + &alpha; <sub>k</sub>p<sub>k</sub>, &alpha; <sub>
+                        k</sub></dfn> удовлетворяет условиям Вольфе<br>
+                        &emsp;обозначить <dfn>s<sub>k</sub> = x<sub>k+1</sub>-x<sub>k</sub>
+                            и y<sub>k</sub> = &nabla; f<sub>k+1</sub> - &nabla; f<sub>k</sub></dfn><br>
+                        &emsp;вычислить <dfn>C<sub>k+1</sub></dfn><br>
+                        &emsp;<dfn>k=k+1</dfn><br>
+                        <strong>end</strong>
                     </code>
                 </figure>
                 <p>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:<br>
